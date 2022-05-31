@@ -1,17 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 const $ = window.$;
 //import 'css-doodle';
 
 function App() {
   return (
-    <css-doodle>{`
-      :doodle {
-        @grid: 2 / 200px;
-        grid: 1px;
-      }
-      background: @pick(red, pink);
-    `}</css-doodle>
+     <css-doodle use="var(--rule1)"id = "doodle"></css-doodle>
   );
 }
 
