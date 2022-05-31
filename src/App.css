@@ -33,9 +33,8 @@ css-doodle {
     @grid: 8 / 100vmax; 
     background: hsla(@r(100), 85%, @r(90%, 100%), @r(0.9)); 
     @even {
-      background: var(--my-color2
-      ) } 
-    @row (3) {background: var(--my-color3) } 
+      background:#483d8b; } 
+    @row (3) {background: #9991cf; } 
     @size: @r(1vmax, 10vmax);
       @shape: star 10;
   animation: test1 infinite @r(100s, 150s) linear; 
@@ -57,7 +56,7 @@ css-doodle {
     100% {
       opacity: 0; 
       transform: translate3d(@r(150px), @r(200px), 0)
-      rotate(@r(0deg));
+      rotate(@r(360deg));
     }
   }
   );
