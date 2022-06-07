@@ -3,10 +3,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.css';
 import bootstrap from 'bootstrap'
+import $ from 'jquery'
 //import Carousel from 'react-bootstrap/Carousel';
 //import bootstrap from 'bootstrap.dist.js';
 //import Bootstrap from 'bootstrap/bundle.js'
-const $ = window.$;
+//const $ = window.$;
 //import 'css-doodle';
 //import '../Public/css-doodle';
 console.clear()
@@ -51,17 +52,15 @@ var currentQuote = aocQuotes[startNum];
 var currentAuthor = "-Alexandria-Ocasio-Cortez";
 
 
-
+//var myCarousel = document.getElementById('carodemo');
 class Box1 extends React.Component {
   constructor(props) {
     super(props);
     this.quoteClick = this.quoteClick.bind(this);
   }
   quoteClick() {
-  
-    console.log("hello");
-    //$("#carodemo").carousel("prev");
-  
+     $("#carodemo").carousel("next");
+     // console.log(myCarousel);
   }
   render() {
    

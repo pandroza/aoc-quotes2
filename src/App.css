@@ -5,7 +5,7 @@
   --my-color3: #9991cf;
 }
 
-@import 'bootstrap/dist/css/bootstrap.css';
+
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
@@ -64,6 +64,9 @@ css-doodle {
     }
   }
   );
+}
+h2 {
+  font-family: "Teko", sans-serif;
 }
 #quote-box-outer {
   background: var(--my-color1);
