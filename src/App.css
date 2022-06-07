@@ -1,15 +1,20 @@
+
 :root {
   --my-color1: #cecae8;
   --my-color2: #483d8b;
   --my-color3: #9991cf;
 }
 
+@import 'bootstrap/dist/css/bootstrap.css';
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 html {
   font-size: 10px;
 }
 body {
   margin: 0;
-  //font-family: "Teko", sans-serif;
+  font-family: "Teko", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.6rem;
@@ -20,7 +25,6 @@ body {
  
 
 }
-
 #doodle {
   position: fixed;
   z-index: -1;
@@ -60,4 +64,433 @@ css-doodle {
     }
   }
   );
+}
+#quote-box-outer {
+  background: var(--my-color1);
+  grid-area: quote-box;
+}
+#quote-box-inner {
+  transform-style: preserve-3d;
+  transform: skewY(-15deg);
+}
+#quotes-by-box,
+#new-tweet-box,
+#change,
+#ocasio,
+#auth2 {
+  color: var(--my-color1);
+}
+#cortez,
+#alex,
+#nueva,
+#cambiar,
+#square1,
+#square2,
+#aboutAOC,
+h3 {
+  color: var(--my-color2);
+}
+#q2,
+#cita {
+  color: var(--my-color3);
+}
+#star1, #star2 {
+  color:transparent;
+}
+#quotes-by,
+#new-tweet,
+.caro2,
+#container {
+  background: transparent;
+}
+#profile-text {
+  background: var(--my-color1);
+}
+#q1,
+#new-quote,
+.caro,
+#change-box,
+#ocasio-box,
+#line {
+  background: var(--my-color2);
+}
+
+a#tweet-quote:link {
+  background: var(--my-color3);
+  color: var(--my-color1);
+  text-decoration: none;
+}
+a#tweet-quote:visited {
+  color: var(--my-color1);
+  text-decoration: none;
+}
+a#tweet-quote:hover {
+  color: white;
+  text-decoration: none;
+}
+a#tweet-quote:active {
+  color: purple;
+  text-decoration: none;
+}
+#new-quote:hover,
+#change:hover {
+  color: white;
+  cursor: pointer;
+}
+.author {
+  color: white;
+}
+#aboutAOC {
+  font-size: 3.5rem;
+}
+#square1,
+#square2 {
+  font-size: 2.5rem;
+}
+#quotes-by {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 2rem;
+}
+#new-tweet,
+#change {
+  font-size: 1.9rem;
+}
+#cita-tweet,
+#cambiar,
+#star1,
+#star2,
+div.carousel-caption {
+  font-size: 1.5rem;
+}
+#ocasio,
+#alex,
+#cortez {
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+}
+/*
+@mixin triangle($t, $bl, $br, $bt, $col) {
+  position: absolute;
+  top: $t;
+  width: 0;
+  height: 0;
+  border-left: $bl solid transparent;
+  border-right: $br solid transparent;
+  border-top: $bt solid var($col);
+}
+*/
+#quote-box-outer {
+  width: 350px;
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 0px;
+  height: 560px;
+  border: solid 1px var(--my-color3);
+}
+#quotes-by-box {
+  padding-top: 20px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  padding-left: 0;
+  width: 300px;
+}
+  #q1 {
+    padding: 0 5px 0 20px;
+  }
+  #q2 {
+    padding-left: 10px;
+  }
+#alex-box {
+  position: relative;
+  left: 15px;
+  width: 250px;
+  animation-name: slide;
+  animation-duration: 2s;
+}
+@-webkit-keyframes slide {
+  0% {
+    left: -1010px;
+  }
+  50% {
+    left: -1010px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+@keyframes slide {
+  0% {
+    left: -1010px;
+  }
+  50% {
+    left: -1010px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+#ocasio-box {
+  position: relative;
+  top: -15px;
+  height: 53px;
+  left: 15px;
+  padding-left:10px;
+  width: 172px;
+  animation-name: slide2;
+  animation-duration: 3s;
+}
+  #exclaim {
+    position: relative;
+    top: -7px;
+    
+    
+  }
+  #square1 {
+    position: absolute;
+    top: -3px;
+    left: 8px;
+  }
+  #star1 {
+    position: absolute;
+    top: 5px;
+    left: 9.5px;
+    z-index: 3;
+    text-shadow: 0 0 0 var(--my-color1);
+  }
+
+  #square2 {
+    position: absolute;
+    top: 23px;
+    left: 150px;
+  }
+  #star2 {
+    position: absolute;
+    top: 33px;
+    left: 151.5px;
+    text-shadow: 0 0 0 var(--my-color1);
+  }
+@-webkit-keyframes slide2 {
+  0% {
+    left: 1010px;
+  }
+  66% {
+    left: 1010px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+@keyframes slide2 {
+  0% {
+    left: 1010px;
+  }
+  66% {
+    left: 1010px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+#cortez-box {
+  position: absolute;
+  top: 117px;
+  left: 195px;
+  width: 130px;
+  animation-name: slide3;
+  animation-duration: 4s;
+}
+@-webkit-keyframes slide3 {
+  0% {
+    left: 1195px;
+  }
+  75% {
+    left: 1195px;
+  }
+  100% {
+    left: 195px;
+  }
+}
+
+@keyframes slide3 {
+  0% {
+    left: 1195px;
+  }
+  75% {
+    left: 1195px;
+  }
+  100% {
+    left: 195px;
+  }
+}
+.caro {
+  position: relative;
+  padding-top: 10px;
+  width: 320px;
+  margin-top: 20px;
+  height: 180px;
+  left: 15px;
+}
+div.carousel-caption {
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Helvetica Neue", Arial, sans-serif;
+  padding: 0;
+  top: 5px;
+  left: 7px;
+  right: 7px;
+}
+
+.triangle-caro {
+  @include triangle(378px, 0, 60px, 30px, --my-color2);
+  left: 14.5px;
+}
+
+.caro2 {
+  position: absolute;
+  top: 205px;
+  padding-top: 10px;
+  width: 320px;
+  height: 180px;
+  left: 15px;
+}
+#new-tweet-box {
+  position: relative;
+  margin-top: 40px;
+  margin-left: 138px;
+}
+  #new-quote {
+    padding: 0 10px;
+  }
+  #tweet-quote {
+    padding: 0 10px;
+    margin-left: 5px;
+  }
+  
+  .triangle-new {
+    @include triangle(23px, 0, 9px, 6px, --my-color2);
+  }
+  .triangle-tweet {
+    @include triangle(23px, 9px, 0, 6px, --my-color3);
+    left: 187px;
+  }
+  
+#auth,
+#text2 {
+  opacity: 0;
+}
+#cita-box {
+  position: relative;
+  margin-left: 157px;
+  margin-top: 10px;
+}
+  #cita {
+    margin-left: 40px;
+  }
+#change-box {
+  text-align: center;
+  position: relative;
+  padding-top: 2px;
+  margin-top: 25px;
+  margin-left: 214px;
+  width: 120px;
+}
+  #change {
+    padding: 0 10px;
+  }
+  /*
+  .triangle-change {
+    @include triangle(24px, 9px, 0, 6px, --my-color2);
+    left: 111px;
+  }
+*/
+
+#cambiar-box {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 230px;
+}
+#aboutAOC {
+  font-family:"Nanum Pen Script", cursive;
+  margin-top: 2px;
+  width: 100%;
+  border-bottom: 1px solid var(--my-color2);
+}
+#aoc-image {
+  width: 250px;
+  border: 4px solid var(--my-color3);
+}
+#pic-box {
+  position: relative;
+  margin: 20px;
+}
+#line {
+  width: 100%;
+  height: 1px;
+}
+#profile-text {
+  font-family:"Nanum Pen Script", cursive;
+  text-align: center;
+  position: relative;
+  width: 350px;
+  margin: 40px 0 50px 5px;
+  grid-area: profile;
+  border:solid 1px var(--my-color2);
+  border-radius: 5px;
+}
+h3 {
+  margin-top: 10px;
+  padding: 20px;
+  line-height: 2.8rem;
+}
+#container {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 360px;
+  grid-template-rows: auto auto;
+  grid-gap: 40px;
+  grid-template-areas:
+    "quote-box"
+    "profile";
+}
+
+
+@media only screen and (min-width: 868px) {
+  #profile-text {
+    width: 400px;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  #quote-box-outer {
+    margin-top: 80px;
+  }
+
+  #container {
+    overflow-y: hidden;
+    width: 100%;
+    height: 750px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 360px 360px;
+    grid-gap: 40px;
+    grid-template-areas:
+      "quote-box profile"
+      "quote-box profile";
+  }
+}
+@media only screen and (min-width: 868px) and (min-height: 700px) {
+  #container {
+    height: 100vh;
+  }
 }
