@@ -2,7 +2,7 @@ import React from 'react';
 //import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.css';
-import bootstrap from 'bootstrap' 
+//import bootstrap from 'bootstrap' 
 //import bootstrap from 'bootstrap.dist.js';
 //import Bootstrap from 'bootstrap/bundle.js'
 const $ = window.$;
